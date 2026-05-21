@@ -226,6 +226,11 @@ Each search guide contains grep examples, documentation structure, and common us
 
 **Search strategy:** Use grep/ripgrep to search directly in the `*-docs/` directories. The search guides (`.md` files) provide navigation patterns and common queries.
 
+**Image & Diagram Handling**
+All reference Markdown files contain diagrams (swizzle patterns, matrix layouts, tensor-core register files, WMMA/WGMMA shapes, etc.) as direct links to NVIDIA’s official images.  
+If you need to see a picture to understand a layout or data movement, simply open the image link in the Markdown file. You have internet access and can view it directly, then incorporate the visual details into your reasoning. Always check image links in the reference docs when the text mentions “Figure”, “swizzle”, “layout”, “matrix”, or “register file”.
+
+
 ## Additional References
 
 - `references/performance-traps.md` — Bank conflicts, memory coalescing, scale-dependent optimizations
